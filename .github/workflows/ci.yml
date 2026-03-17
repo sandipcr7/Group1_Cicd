@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ cicd-prod ]
+    branches: [ cicd-prod,Feature_SandipBharati ]
   pull_request:
-    branches: [ cicd-prod ]
+    branches: [ cicd-prod,Feature_SandipBharati ]
 
 jobs:
   lint:
