@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capstone Project Home</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="page-header">
-      <h1>Capstone Project Dashboard | Update2</h1>
-    </header>
 
-    <main class="content">
-      <section class="card">
-        <h2>Project Info</h2>
-        <div class="placeholder">
-          <strong>Group Number:</strong>
-          <span id="group-number">1</span>
-        </div>
-        <div class="placeholder">
-          <strong>Project Title:</strong>
-          <span id="project-title">CI/CD Dashboard</span>
-        </div>
-        <div class="placeholder">
-          <strong>Group Members:</strong>
-          <span id="group-members">Raj Kumar Shrestha, Birav Bhattrai, Gurpreet
-            Singh, Sandip Bharati</span>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capstone Project Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <section class="card">
-        <h2>Update placeholders</h2>
-        <p>Use the form below to update the values shown above.</p>
+<body>
+  <header class="page-header">
+    <h1>Capstone Project Dashboard | Update2</h1>
+  </header>
 
-        <form id="project-form">
-          <label>
-            Group Number
-            <input type="text" id="input-group-number" placeholder="e.g. 5" />
-          </label>
+  <main class="content">
+    <section class="card">
+      <h2>Project Info</h2>
+      <div class="placeholder">
+        <strong>Group Number:</strong>
+        <span id="group-number">1</span>
+      </div>
+      <div class="placeholder">
+        <strong>Project Title:</strong>
+        <span id="project-title">CI/CD Dashboard</span>
+      </div>
+      <div class="placeholder">
+        <strong>Group Members:</strong>
+        <span id="group-members">Raj Kumar Shrestha, Birav Bhattrai, Gurpreet
+          Singh, Sandip Bharati</span>
+      </div>
+    </section>
 
-          <label>
-            Project Title
-            <input type="text" id="input-project-title"
-              placeholder="e.g. CI/CD Dashboard" />
-          </label>
+    <section class="card">
+      <h2>Update placeholders</h2>
+      <p>Use the form below to update the values shown above.</p>
 
-          <label>
-            Group Members
-            <input type="text" id="input-group-members"
-              placeholder="e.g. Alice, Bob, Carol" />
-          </label>
+      <form id="project-form">
+        <label>
+          Group Number
+          <input type="text" id="input-group-number" placeholder="e.g. 5" />
+        </label>
 
-          <button type="submit">Save</button>
-        </form>
+        <label>
+          Project Title
+          <input type="text" id="input-project-title" placeholder="e.g. CI/CD Dashboard" />
+        </label>
 
-        <p class="hint">Tip: Values persist for this session.</p>
-      </section>
-    </main>
+        <label>
+          Group Members
+          <input type="text" id="input-group-members" placeholder="e.g. Alice, Bob, Carol" />
+        </label>
 
-    <footer class="page-footer">
-      <p>Built for CI/CD Concepts & Capstone Project Integration</p>
-    </footer>
+        <button type="submit">Save</button>
+      </form>
 
-    <script src="script.js"></script>
-  </body>
+      <p class="hint">Tip: Values persist for this session.</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>Built for CI/CD Concepts & Capstone Project Integration</p>
+    <span id="date"></span>
+  </footer>
+
+  <script>
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("date").textContent =
+      today.toLocaleDateString('en-US', options);
+  </script>
+</body>
+
 </html>
