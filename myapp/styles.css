@@ -119,13 +119,13 @@ button:active {
   color: var(--muted);
 }
 
-.page-footer {
+/* .page-footer {
   padding: 1rem 1.5rem;
   text-align: center;
   font-size: 0.85rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
-}
+} */
 
 @media (max-width: 520px) {
   body {
