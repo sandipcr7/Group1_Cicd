@@ -3,11 +3,6 @@ const projectTitleEl = document.getElementById('project-title');
 const groupMembersEl = document.getElementById('group-members');
 const form = document.getElementById('project-form');
 
-const today = new Date();
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-document.getElementById("date").textContent =
-  today.toLocaleDateString('en-US', options);
-
 const STORAGE_KEY = 'capstoneProjectPlaceholders';
 
 function loadFromStorage() {
